@@ -1,0 +1,15 @@
+---
+name: "Releases"
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
+jobs:
+  tagged-release:
+    name: "Release"
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "marvinpinto/action-automatic-releases@8d9ddb2546e687f72855285d2719a11709cea6d0"
+        with:
+          repo_token: "${{ github.token }}"
+          prerelease: false
