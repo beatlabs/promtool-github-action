@@ -25,12 +25,12 @@ jobs:
     - name: Check Prometheus rules
       uses: beatlabs/promtool-github-action@v0.0.1
       with:
-        promtool_command: 'check'
-        promtool_files: 'monitoring/prometheus/*.y*ml'
+        cmd: 'check'
+        files: 'monitoring/prometheus/*.y*ml'
 
     - name: Test Prometheus rules
       uses: beatlabs/promtool-github-action@v0.0.1
       with:
-        promtool_command: 'test'
-        promtool_files: 'monitoring/prometheus/test*.y*ml'
+        cmd: 'test'
+        files: 'monitoring/prometheus/test*.y*ml'
 ```

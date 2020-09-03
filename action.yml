@@ -3,11 +3,11 @@ name: 'Promtool GitHub Actions'
 description: 'Run promtool commands against Prometheus rules files'
 author: 'Markos Chandras'
 inputs:
-  promtool_command:
+  cmd:
     description: 'The promtool command to run'
     required: true
     default: false
-  promtool_files:
+  files:
     description: 'Files regex for prometheus rules files'
     required: true
     default: false
