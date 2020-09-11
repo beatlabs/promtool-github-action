@@ -1,4 +1,4 @@
-![Linting](https://github.com/beatlabs/promtool-action/workflows/Linting/badge.svg)
+![Linting](https://github.com/beatlabs/promtool-github-action/workflows/Linting/badge.svg)
 # Promtool GitHub Action
 
 ## Introduction
