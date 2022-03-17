@@ -23,13 +23,13 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Check Prometheus rules
-      uses: beatlabs/promtool-github-action@v0.0.1
+      uses: beatlabs/promtool-github-action@v0.0.2
       with:
         cmd: 'check'
         files: 'monitoring/prometheus/*.y*ml'
 
     - name: Test Prometheus rules
-      uses: beatlabs/promtool-github-action@v0.0.1
+      uses: beatlabs/promtool-github-action@v0.0.2
       with:
         cmd: 'test'
         files: 'monitoring/prometheus/test*.y*ml'
